@@ -1,0 +1,33 @@
+
+    <h2>Calendar</h2>
+    <div>
+        <h4>This is my calendar, welcome! Will be implemented very soon! {{title}}</h4>
+        <button class="btn btn-success left">Test</button>
+    </div>
+    <h2 class="month col-md-12">February</h2>
+    <div class="seven-cols">
+        <div class="col-md-1 wk-dy">
+            <h4>Sunday</h4>
+        </div>
+        <div class="col-md-1 wk-dy">
+            <h4>Monday</h4>
+        </div>
+        <div class="col-md-1 wk-dy">
+            <h4>Tuesday</h4>
+        </div>
+        <div class="col-md-1 wk-dy">
+            <h4>Wednesday</h4>
+        </div>
+        <div class="col-md-1 wk-dy">
+            <h4>Thursday</h4>
+        </div>
+        <div class="col-md-1 wk-dy">
+            <h4>Friday</h4>
+        </div>
+        <div class="col-md-1 wk-dy">
+            <h4>Saturday</h4>
+        </div>
+        <div class="col-md-1 box" *ngFor="#day of days">
+            <strong>{{day}}</strong>
+        </div>
+    </div>

@@ -1,0 +1,10 @@
+<h2>Hub City Upcoming Events</h2>
+<div class="well" *ngFor="#event of events"
+        [class.selected]="event === selectedEvent"
+        (click)="onSelect(event)">
+        <span class="badge">{{event.id}}</span> {{event.name}}
+</div>
+<div *ngIf="selectedEvent">
+    <h3>{{selectedEvent.name | uppercase}}</h3>
+    <button class="btn btn-primary" (click)="gotoDetail()">View Details</button>
+</div>

@@ -1,0 +1,19 @@
+<div class="container-fluid" *ngIf="event">
+    <h2>{{event.name}}</h2>
+    <div>
+        <label>id: </label>{{event.id}}
+    </div>
+    <div>
+        <label>where at? </label>
+        {{event.location}}
+    </div>
+    <div>
+        <label>when? </label>
+        10AM
+    </div>
+    <div>
+        <label>about: </label>
+        {{event.about}}
+    </div>
+    <button class="btn btn-primary" [routerLink]="['Events']">Events</button>
+</div>
