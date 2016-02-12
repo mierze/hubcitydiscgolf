@@ -1,7 +1,4 @@
 node_modules
-
 README.md
-
-app/.idea/workspace.xml
-
+app/.idea
 app/style/bootstrap.scss
