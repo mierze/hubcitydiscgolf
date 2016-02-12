@@ -36,15 +36,6 @@ gulp.task('sass', function () {
         .pipe(sass().on('error', sass.logError))
         .pipe(gulp.dest('./app/style'));
 });
-gulp.task('tsc', function () {
-    return gulp.src(['app/**/*.ts'])
-        .pipe(typescript({
-            experimentalDecorators: true,
-            emitError: false,
-            sourceMap: true
-        }))
-        .pipe(gulp.dest('public/'))
-});
 //clean out public directory
 gulp.task('clean', function(cb) {
     return rimraf('./public', cb);

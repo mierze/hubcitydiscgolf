@@ -1,33 +1,35 @@
-
-    <h2>Calendar</h2>
-    <div>
-        <h4>This is my calendar, welcome! Will be implemented very soon! {{title}}</h4>
-        <button class="btn btn-success left">Test</button>
+<h2>Calendar</h2>
+<p>Upcoming events this month are listed, still being implemented to allow for scrolling thru all months.</p>
+<header>
+    <button class="btn btn-primary" (click)="goTo(cm-1)"> <<</button>
+    <h2 class="month">{{month}}</h2>
+    <button class="btn btn-primary" (click)="goTo(cm+1)"> >></button>
+</header>
+<div class="days">
+    <div class="cell">
+        <h4>Sunday</h4>
     </div>
-    <h2 class="month col-md-12">February</h2>
-    <div class="seven-cols">
-        <div class="col-md-1 wk-dy">
-            <h4>Sunday</h4>
-        </div>
-        <div class="col-md-1 wk-dy">
-            <h4>Monday</h4>
-        </div>
-        <div class="col-md-1 wk-dy">
-            <h4>Tuesday</h4>
-        </div>
-        <div class="col-md-1 wk-dy">
-            <h4>Wednesday</h4>
-        </div>
-        <div class="col-md-1 wk-dy">
-            <h4>Thursday</h4>
-        </div>
-        <div class="col-md-1 wk-dy">
-            <h4>Friday</h4>
-        </div>
-        <div class="col-md-1 wk-dy">
-            <h4>Saturday</h4>
-        </div>
-        <div class="col-md-1 box" *ngFor="#day of days">
-            <strong>{{day}}</strong>
-        </div>
+    <div class="cell">
+        <h4>Monday</h4>
     </div>
+    <div class="cell">
+        <h4>Tuesday</h4>
+    </div>
+    <div class="cell">
+        <h4>Wednesday</h4>
+    </div>
+    <div class="cell">
+        <h4>Thursday</h4>
+    </div>
+    <div class="cell">
+        <h4>Friday</h4>
+    </div>
+    <div class="cell">
+        <h4>Saturday</h4>
+    </div>
+</div>
+<div class="cell" [ngClass]="{current: day.date.getDate() == cd && cm == date.getMonth()}" *ngFor="#day of days">
+    <strong>{{day.date.getDate()}}</strong>
+    <em class="dow">{{getDay(day.dow)}}</em>
+    <p>{{day.events}}</p>
+</div>

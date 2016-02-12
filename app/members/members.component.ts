@@ -12,6 +12,5 @@ export class MembersComponent implements OnInit {
     }
 
     ngOnInit() {
-        alert("Join Up!");
     }
 }

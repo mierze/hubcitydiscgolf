@@ -1,22 +1,23 @@
 import { Component } from 'angular2/core';
 import { Router } from 'angular2/router';
+import { NgStyle } from 'angular2/common';
 
 @Component({
     selector: 'nav-bar',
     templateUrl: 'app/partials/nav.component.html',
-    styleUrls: ['app/partials/nav.component.css']
+    styleUrls: ['app/partials/nav.component.css'],
+    directives: [NgStyle]
 })
 export class NavComponent {
-    public title:string;
-    public showMenu:boolean;
+    title:string;
+    showMenu:string = 'none';
 
     constructor(private _router:Router) {
         this.title = "Hub City Disc Golf";
-        this.showMenu = true;
     }
 
     toggleMenu() {
-        this.showMenu = this.showMenu ? false : true;
+        this.showMenu = this.showMenu == 'block' ? 'none' : 'block';
     }
 
     navigate(route:string) {
@@ -42,9 +43,6 @@ export class NavComponent {
             default:
                 break;
         }
-    }
-
-    mobile() {
-        return window.innerWidth < 768 ? true : false;
+        this.toggleMenu();
     }
 }

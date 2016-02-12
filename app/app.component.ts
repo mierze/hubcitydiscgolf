@@ -10,7 +10,6 @@ import { CalendarComponent } from './calendar/calendar.component';
 import { EventService } from './events/event.service';
 import { NavComponent } from './partials/nav.component';
 import { CourseService } from './courses/courses';
-
 import { ImageService } from './gallery/image.service';
 import { CourseDetailComponent } from './courses/course-detail.component';
 

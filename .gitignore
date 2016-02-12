@@ -1,2 +1,8 @@
 app/**/*.js
 node_modules
+
+README.md
+
+app/.idea/workspace.xml
+
+app/style/bootstrap.scss

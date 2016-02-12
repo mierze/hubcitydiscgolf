@@ -7,11 +7,10 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="/">{{title}}</a>
+            <a class="navbar-brand" (click)="navigate('dash')">{{title}}</a>
         </div>
-        <div class="collapse navbar-collapse" id="hcdg-navbar">
+        <div class="collapse navbar-collapse" id="hcdg-navbar" [ngStyle]="{'display' : showMenu}">
             <ul class="nav navbar-nav">
-                <li><a (click)="navigate('dash')">Dashboard</a></li>
                 <li><a (click)="navigate('events')">Events</a></li>
                 <li><a (click)="navigate('cal')">Calendar</a></li>
                 <li><a (click)="navigate('courses')">Courses</a></li>
@@ -20,8 +19,6 @@
             </ul>
             <ul class="nav navbar-nav navbar-right">
                 <li><a href="https://www.facebook.com/groups/hubcitydgc" title="Hub City Disc Golf Facebook Group. Come join the fun!" target="_blank">HCDG Facebook</a></li>
-
-                <li><a href="http://dgcoursereview.com" title="Disc Golf Course Review" target="_blank">DGCR</a></li>
                 <li><a href="http://discgolfunited.com" title="Disc Golf United" target="_blank">DGU</a></li>
                 <li><a href="http://pdga.com" title="Professional Disc Golf Association" target="_blank">PDGA</a></li>
             </ul>
