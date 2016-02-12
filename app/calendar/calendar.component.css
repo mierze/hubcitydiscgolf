@@ -1,65 +1,40 @@
-.cell {
+.box, .wk-dy, .month {
     border: 2px solid #1b6d85;
+    margin-bottom: 2px;
 }
-.dow {
-    display: none
-}
-.days {
-    clear: left;
-}
-.days .cell {
-    height: auto;
-}
-.cell {
+
+.box {
     height: 100px;
-    overflow: hidden;
 }
-header button {
-    float: left;
-    display: inline !important;
+
+.wk-dy {
+
 }
-header .month {
+
+.month {
     text-align: center;
-    width: 50%;
-    float: left;
-    margin: auto;
-    display: inline !important;
 }
 
-.current {
-    background-color: #43ac6a;
-    color: #ffffff;
-}
-
-.cell {
-    float: left;
-    position: relative;
-    min-height: 1px;
-    padding-left: 15px;
-    padding-right: 15px;
-    width: 14.285714285714285714285714285714%;
-}
-
-@media (max-width: 767px) {
-    .days {
-        display: none;
-    }
-    .dow {
-        display: inline-block;
-    }
-    .cell {
-        width: 50%;
+@media (min-width: 768px) {
+    .seven-cols .col-md-1,
+    .seven-cols .col-sm-1,
+    .seven-cols .col-lg-1 {
+        width: 14.285714285714285714285714285714%;
     }
 }
 
-@media (min-width: 767px) {
-    .cell {
-        font-size: .75em;
+@media (min-width: 992px) {
+    .seven-cols .col-md-1,
+    .seven-cols .col-sm-1,
+    .seven-cols .col-lg-1 {
+        width: 14.285714285714285714285714285714%;
     }
 }
 
-@media (min-width: 1100px) {
-    .cell {
-        font-size: 1em;
+@media (min-width: 1200px) {
+    .seven-cols .col-md-1,
+    .seven-cols .col-sm-1,
+    .seven-cols .col-lg-1 {
+        width: 14.285714285714285714285714285714%;
     }
 }
