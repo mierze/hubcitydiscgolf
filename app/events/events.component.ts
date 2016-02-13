@@ -18,7 +18,7 @@ export class EventsComponent implements OnInit {
     this.selectedEvent = undefined;
     this.events = [];
 
-    this._eventService.getEvents().then(events => this.events = events);
+    this.events = this._eventService.getEvents();
 
     return this.events;
   }

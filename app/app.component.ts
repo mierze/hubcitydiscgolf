@@ -12,12 +12,13 @@ import { NavComponent } from './partials/nav.component';
 import { CourseService } from './courses/courses';
 import { ImageService } from './gallery/image.service';
 import { CourseDetailComponent } from './courses/course-detail.component';
+import {DateService} from "./calendar/date.service";
 
 @Component({
     selector: 'app',
     templateUrl: 'app/app.component.html',
     directives: [ROUTER_DIRECTIVES, NavComponent],
-    providers: [EventService, CourseService, ImageService, ROUTER_PROVIDERS]
+    providers: [EventService, CourseService, ImageService, DateService, ROUTER_PROVIDERS]
 })
 @RouteConfig([
     {path: '/dashboard', name: 'Dashboard', component: DashboardComponent, useAsDefault: true},

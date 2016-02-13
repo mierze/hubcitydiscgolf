@@ -14,7 +14,7 @@ export class DashboardComponent implements OnInit {
     }
 
     ngOnInit() {
-        this._eventService.getEvents().then(events => this.events = events.slice(0,3));
+        this.events = this._eventService.getEvents().slice(0,5);
     }
 
     gotoDetail(event:Event) {

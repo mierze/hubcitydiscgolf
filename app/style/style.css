@@ -4630,7 +4630,6 @@ button.close {
   overflow: hidden; }
 
 .modal {
-  display: none;
   overflow: hidden;
   position: fixed;
   top: 0;

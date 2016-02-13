@@ -7,19 +7,13 @@ export interface Event {
     date: Date;
     location: string;
     about: string;
-    //attending: string[];
-}
-export interface Date {
-    month: number;
-    day: number;
-    time: number; //0-24
-    year: number;
+    repeat: string;
 }
 
 @Injectable()
 export class EventService {
     getEvents() {
-        return Promise.resolve(EVENTS);
+        return EVENTS;
     }
 
     getEvent(id:number) {
