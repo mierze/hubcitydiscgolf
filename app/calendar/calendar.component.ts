@@ -1,5 +1,4 @@
 import { Component, OnInit } from 'angular2/core';
-import { CalendarCell } from './partials/cell';
 import { NgClass } from 'angular2/common';
 import { DateService } from "./date.service";
 import { Event, EventService } from '../events/event.service';
@@ -59,7 +58,7 @@ export class CalendarComponent implements OnInit {
         let daysEvents:Event[] = [];
         for (var e in this.events)
             if (this.events[e].repeat.length) {
-                if (this.events[e].repeat[0] == d.getDay()) {
+                if (this.events[e].repeat[0] == d.getDay().toString()) {
                     if (this.events[e].repeat[1]) {
                         if (this.events[e].repeat[1] == 'a' && (d.getDate() % 2))
                             daysEvents.push(this.events[e]);

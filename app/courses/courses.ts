@@ -8,20 +8,20 @@ export interface Course {
     //attending: string[];
 }
 
-export var COURSES:Course[] = [
+export var COURSES: Course[] = [
     {
         "id": 1,
         "name": "Pipeline",
         "about": "Course designed around a grand gas pipeline. Over the hill and through the woods you will need to go to play this beautiful course. Not for the faint of heart.",
-        "location": "300 Old Canaan Rd. Spartanburg, SC 29302"
+        "location": "315 Old Canaan Road Ext. Spartanburg, SC 29302"
     },
     {
         "id": 2,
         "name": "Tyger River",
         "about": "Great course. Sports several open longer holes and a tight technical front 9 around beautiful Tyger River park.",
-        "location": ".. Gano Dr. Duncan, SC"
+        "location": "179 Dillard Road Reidville, SC"
     },
-    {"id": 3, "name": "Va-Du-Mar (Shoally Creek)", "about": "Great course.", "location": "Boiling Springs, SC"},
+    { "id": 3, "name": "Shoally Creek", "about": "Great course.", "location": "591 McMillin Blvd. Boiling Springs, SC 29316" },
     {
         "id": 4,
         "name": "USC Upstate",
@@ -36,7 +36,7 @@ export class CourseService {
         return Promise.resolve(COURSES);
     }
 
-    getCourse(id:number) {
+    getCourse(id: number) {
         return COURSES[id - 1];
 
 

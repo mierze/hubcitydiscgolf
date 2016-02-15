@@ -1,50 +1,44 @@
-.cell {
-    border: 2px solid #1b6d85;
-}
 .dow {
     display: none
 }
-.days {
-    clear: left;
-}
 .days .cell {
     height: auto;
+}
+.click {
+    cursor: pointer;
 }
 .cell {
     height: 100px;
     overflow: hidden;
 }
-h5 {
-    font-size: 1.2em;
+h2, h4, h5 {
     font-weight: bold;
 }
 header button {
+    width: 14.28571428571429%;
     float: left;
     display: inline !important;
 }
-header .month {
+header h2 {
     text-align: center;
-    width: 50%;
+    width: 71.4285714286%;
     float: left;
     margin: auto;
     display: inline !important;
 }
-
 .current {
     background-color: #43ac6a;
     color: #ffffff;
 }
-
 .cell {
     float: left;
-    position: relative;
-    min-height: 1px;
-    padding-left: 15px;
-    padding-right: 15px;
-    width: 14.285714285714285714285714285714%;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 1px solid #1b6d85;
+    width: 14.28571428571429%;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 900px) {
     .days {
         display: none;
     }
@@ -56,9 +50,9 @@ header .month {
     }
 }
 
-@media (min-width: 767px) {
+@media (min-width: 900px) {
     .cell {
-        font-size: .75em;
+        font-size: .8em;
     }
 }
 

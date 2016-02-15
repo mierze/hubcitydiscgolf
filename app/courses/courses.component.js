@@ -44,7 +44,8 @@ System.register(['angular2/core', 'angular2/router', './courses'], function(expo
                 CoursesComponent = __decorate([
                     core_1.Component({
                         selector: 'courses',
-                        templateUrl: 'app/courses/courses.component.html'
+                        templateUrl: 'app/courses/courses.component.html',
+                        styleUrls: ['app/courses/courses.component.css']
                     }), 
                     __metadata('design:paramtypes', [courses_1.CourseService, router_1.Router])
                 ], CoursesComponent);

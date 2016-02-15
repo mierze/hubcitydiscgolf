@@ -1,8 +1,7 @@
 <em>Coming along nice, still a few bugs I gotta work out but functional for now. Try clicking on events to get details. Will be styling this up better once all bugs are worked out.</em>
-<h2>Calendar</h2>
 <header>
     <button class="btn btn-primary" (click)="goTo(nextM - 1)"> <<</button>
-    <h2 class="month">{{title}}</h2>
+    <h2>{{title}}</h2>
     <button class="btn btn-primary" (click)="goTo(nextM + 1)"> >></button>
 </header>
 <div class="days">
@@ -28,15 +27,14 @@
         <h4>Saturday</h4>
     </div>
 </div>
-<div class="cell" [ngClass]="{current: day.date.getDate() == date.getDate() && day.date.getMonth() == date.getMonth()}"
-     *ngFor="#day of days"
-    (click)="cellModal(day)">
-    <strong>{{day.date.getDate()}}</strong>
-    <em class="dow">{{_dateService.getDay(day.date.getDay())}}</em>
-    <h5 *ngFor="#event of day.events">{{event.name}}</h5>
-
+<div class="cell" [ngClass]="{current: (day.date.getDate() == date.getDate() && day.date.getMonth() == date.getMonth()), 'click': (day.events != null && day.events.length)}"
+   *ngFor="#day of days"
+  (click)="cellModal(day)">
+  <strong>{{day.date.getDate()}}</strong>
+  <em class="dow">{{_dateService.getDay(day.date.getDay())}}</em>
+  <h5 *ngFor="#event of day.events">{{event.name}}</h5>
 </div>
-<div class="modal" role="dialog fade" *ngIf="showModal">
+<div class="modal" role="dialog" *ngIf="showModal">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">

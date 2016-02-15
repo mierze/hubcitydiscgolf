@@ -65,7 +65,7 @@ System.register(['angular2/core', 'angular2/common', "./date.service", '../event
                     var daysEvents = [];
                     for (var e in this.events)
                         if (this.events[e].repeat.length) {
-                            if (this.events[e].repeat[0] == d.getDay()) {
+                            if (this.events[e].repeat[0] == d.getDay().toString()) {
                                 if (this.events[e].repeat[1]) {
                                     if (this.events[e].repeat[1] == 'a' && (d.getDate() % 2))
                                         daysEvents.push(this.events[e]);
