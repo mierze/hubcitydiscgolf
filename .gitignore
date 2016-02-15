@@ -1,4 +1,1 @@
-node_modules
-README.md
-app/.idea
-app/style/bootstrap.scss
+.DS_Store
