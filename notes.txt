@@ -1,6 +1,0 @@
-Bookshelf
-
-next(err) in any part of api can be handled in server.js
-
-PASSPORT jared hanson restful
-facebook and twitter authentication
