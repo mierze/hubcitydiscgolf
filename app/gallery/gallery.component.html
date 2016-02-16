@@ -1,5 +1,12 @@
 <em>Will be visually cleaned up and sorted with opportunity to enlarge photos as you click, when I get the time.</em>
 <h2>Gallery</h2>
-<div class="image col-sm-6 col-md-4 col-lg-3" *ngFor="#image of images">
-    <img src="{{image}}" alt="Image"/>
+<div class="image" *ngFor="#image of images" (click)="toggleModal(image)">
+    <img class="click" src="{{image}}" alt="Image"/>
+</div>
+<div class="modal-backdrop" *ngIf="showModal" (click)="toggleModal(null)">
+        <div class="modal-dialog">
+            <div>
+                <img src="{{image}}" alt="Image"/>
+            </div>
+        </div>
 </div>

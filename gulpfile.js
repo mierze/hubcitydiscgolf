@@ -4,7 +4,6 @@ var rimraf = require('rimraf');
 var git = require('gulp-git');
 var sass = require('gulp-sass');
 var concat = require('gulp-concat');
-var typescript = require('gulp-tsc')
 
 //defaults
 gulp.task('default', ['watch']);

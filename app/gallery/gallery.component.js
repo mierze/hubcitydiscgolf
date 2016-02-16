@@ -28,6 +28,10 @@ System.register(['angular2/core', './image.service'], function(exports_1) {
                 GalleryComponent.prototype.ngOnInit = function () {
                     this.images = this._imageService.getImages();
                 };
+                GalleryComponent.prototype.toggleModal = function (image) {
+                    this.image = image;
+                    this.showModal = this.showModal ? false : true;
+                };
                 GalleryComponent = __decorate([
                     core_1.Component({
                         selector: 'gallery',

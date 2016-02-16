@@ -4,9 +4,7 @@
 .days .cell {
     height: auto;
 }
-.click {
-    cursor: pointer;
-}
+
 .cell {
     height: 100px;
     overflow: hidden;

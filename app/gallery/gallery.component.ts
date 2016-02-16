@@ -9,11 +9,16 @@ import { ImageService } from './image.service';
 export class GalleryComponent {
     title:string;
     images:string[] = [];
-    constructor(private _imageService: ImageService) {
-
-    }
+    showModal:boolean;
+    image:string;
+    constructor(private _imageService: ImageService) {}
 
     ngOnInit() {
         this.images = this._imageService.getImages();
+    }
+
+    toggleModal(image:string) {
+        this.image = image;
+        this.showModal = this.showModal ? false : true;
     }
 }
