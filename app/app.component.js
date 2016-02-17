@@ -1,4 +1,4 @@
-System.register(['angular2/core', 'angular2/router', './events/events.component', './events/event-detail.component', './dashboard.component', './members/members.component', './courses/courses.component', './gallery/gallery.component', './calendar/calendar.component', './events/event.service', './partials/nav.component', './courses/courses', './gallery/image.service', './courses/course-detail.component', "./calendar/date.service"], function(exports_1) {
+System.register(['angular2/core', 'angular2/router', './events/events.component', './events/event-detail.component', './dashboard.component', './about/about.component', './courses/courses.component', './gallery/gallery.component', './calendar/calendar.component', './events/event.service', './partials/nav.component', './courses/courses', './gallery/image.service', './courses/course-detail.component', "./calendar/date.service"], function(exports_1) {
     "use strict";
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
         var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -9,7 +9,7 @@ System.register(['angular2/core', 'angular2/router', './events/events.component'
     var __metadata = (this && this.__metadata) || function (k, v) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
-    var core_1, router_1, events_component_1, event_detail_component_1, dashboard_component_1, members_component_1, courses_component_1, gallery_component_1, calendar_component_1, event_service_1, nav_component_1, courses_1, image_service_1, course_detail_component_1, date_service_1;
+    var core_1, router_1, events_component_1, event_detail_component_1, dashboard_component_1, about_component_1, courses_component_1, gallery_component_1, calendar_component_1, event_service_1, nav_component_1, courses_1, image_service_1, course_detail_component_1, date_service_1;
     var AppComponent;
     return {
         setters:[
@@ -28,8 +28,8 @@ System.register(['angular2/core', 'angular2/router', './events/events.component'
             function (dashboard_component_1_1) {
                 dashboard_component_1 = dashboard_component_1_1;
             },
-            function (members_component_1_1) {
-                members_component_1 = members_component_1_1;
+            function (about_component_1_1) {
+                about_component_1 = about_component_1_1;
             },
             function (courses_component_1_1) {
                 courses_component_1 = courses_component_1_1;
@@ -74,7 +74,7 @@ System.register(['angular2/core', 'angular2/router', './events/events.component'
                         { path: '/events', name: 'Events', component: events_component_1.EventsComponent },
                         { path: '/calendar', name: 'Calendar', component: calendar_component_1.CalendarComponent },
                         { path: '/gallery', name: 'Gallery', component: gallery_component_1.GalleryComponent },
-                        { path: '/members', name: 'Members', component: members_component_1.MembersComponent },
+                        { path: '/about', name: 'About', component: about_component_1.AboutComponent },
                         { path: '/courses', name: 'Courses', component: courses_component_1.CoursesComponent },
                         { path: '/detail/:id', name: 'EventDetail', component: event_detail_component_1.EventDetailComponent },
                         { path: '/course/detail/:id', name: 'CourseDetail', component: course_detail_component_1.CourseDetailComponent }

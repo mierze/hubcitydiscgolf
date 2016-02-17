@@ -4,7 +4,9 @@
 .days .cell {
     height: auto;
 }
-
+.well {
+    margin: 0;
+}
 .cell {
     height: 100px;
     overflow: hidden;

@@ -37,14 +37,11 @@ System.register(['angular2/core', 'angular2/router', 'angular2/common'], functio
                         case 'dash':
                             this._router.navigate(['Dashboard']);
                             break;
-                        case 'events':
-                            this._router.navigate(['Events']);
-                            break;
                         case 'cal':
                             this._router.navigate(['Calendar']);
                             break;
-                        case 'mem':
-                            this._router.navigate(['Members']);
+                        case 'about':
+                            this._router.navigate(['About']);
                             break;
                         case 'courses':
                             this._router.navigate(['Courses']);

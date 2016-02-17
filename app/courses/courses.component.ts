@@ -8,16 +8,14 @@ import { Course, CourseService } from './courses';
     styleUrls: ['app/courses/courses.component.css']
 })
 export class CoursesComponent implements OnInit {
-    public courses: Course[];
+    courses: Course[];
 
     constructor(private _courseService: CourseService, private _router: Router) { }
 
     getCourses() {
         this.courses = [];
-
-        this._courseService.getCourses().then(courses => this.courses = courses);
-
-            return this.courses;
+        this.courses = this._courseService.getCourses();
+        return this.courses;
     }
 
     gotoDetail(id: number) {

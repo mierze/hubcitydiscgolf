@@ -1,4 +1,3 @@
-<em>Coming along nice, still a few bugs I gotta work out but functional for now. Try clicking on events to get details. Will be styling this up better once all bugs are worked out.</em>
 <header>
     <button class="btn btn-primary" (click)="goTo(nextM - 1)"> <<</button>
     <h2>{{title}}</h2>
@@ -27,12 +26,12 @@
         <h4>Saturday</h4>
     </div>
 </div>
-<div class="cell" [ngClass]="{current: (day.date.getDate() == date.getDate() && day.date.getMonth() == date.getMonth()), 'click': (day.events != null && day.events.length)}"
+<div class="cell well" [ngClass]="{current: (day.date.getDate() == date.getDate() && day.date.getMonth() == date.getMonth()), 'click': (day.events != null && day.events.length)}"
    *ngFor="#day of days"
   (click)="cellModal(day)">
   <strong>{{day.date.getDate()}}</strong>
   <em class="dow">{{_dateService.getDay(day.date.getDay())}}</em>
-  <h5 *ngFor="#event of day.events">{{event.name}}</h5>
+  <h5 *ngFor="#event of day.events" [ngClass]="{highlight: event.repeat.length, 'brand-warning': !event.repeat.length}">{{event.name}}</h5>
 </div>
 <div class="modal" role="dialog" *ngIf="showModal">
     <div class="modal-dialog">

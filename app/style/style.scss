@@ -15,6 +15,27 @@
 .highlight {
   color: $brand-success;
 }
+.brand-primary {
+    color: $brand-primary;
+}
+.brand-warning {
+    color: $brand-warning;
+}
+.brand-danger {
+    color: $brand-danger;
+}
+.brand-primary-bg {
+    background-color: $brand-primary;
+}
+.brand-success-bg {
+    background-color: $brand-success;
+}
+.brand-warning-bg {
+    background-color: $brand-warning;
+}
+.brand-danger-bg {
+    background-color: $brand-danger;
+}
 .click, a, button, .btn, *[click] {
     cursor: pointer;
 }

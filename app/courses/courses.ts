@@ -33,7 +33,7 @@ export var COURSES: Course[] = [
 @Injectable()
 export class CourseService {
     getCourses() {
-        return Promise.resolve(COURSES);
+        return COURSES;
     }
 
     getCourse(id: number) {

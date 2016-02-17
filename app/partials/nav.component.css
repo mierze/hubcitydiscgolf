@@ -1,4 +1,3 @@
-@media screen and (max-width: 768px) {
-    #hcdg-navbar {
-    }
+nav.navbar ul li a {
+    font-size: 18px;
 }

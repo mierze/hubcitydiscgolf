@@ -42,7 +42,7 @@ System.register(['angular2/core'], function(exports_1) {
                 function CourseService() {
                 }
                 CourseService.prototype.getCourses = function () {
-                    return Promise.resolve(COURSES);
+                    return COURSES;
                 };
                 CourseService.prototype.getCourse = function (id) {
                     return COURSES[id - 1];

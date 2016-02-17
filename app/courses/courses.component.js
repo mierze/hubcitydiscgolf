@@ -29,9 +29,8 @@ System.register(['angular2/core', 'angular2/router', './courses'], function(expo
                     this._router = _router;
                 }
                 CoursesComponent.prototype.getCourses = function () {
-                    var _this = this;
                     this.courses = [];
-                    this._courseService.getCourses().then(function (courses) { return _this.courses = courses; });
+                    this.courses = this._courseService.getCourses();
                     return this.courses;
                 };
                 CoursesComponent.prototype.gotoDetail = function (id) {

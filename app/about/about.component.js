@@ -1,4 +1,4 @@
-System.register(['angular2/core'], function(exports_1) {
+System.register(['angular2/core', '../courses/courses.component'], function(exports_1) {
     "use strict";
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
         var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -9,30 +9,34 @@ System.register(['angular2/core'], function(exports_1) {
     var __metadata = (this && this.__metadata) || function (k, v) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
-    var core_1;
-    var MembersComponent;
+    var core_1, courses_component_1;
+    var AboutComponent;
     return {
         setters:[
             function (core_1_1) {
                 core_1 = core_1_1;
+            },
+            function (courses_component_1_1) {
+                courses_component_1 = courses_component_1_1;
             }],
         execute: function() {
-            MembersComponent = (function () {
-                function MembersComponent() {
+            AboutComponent = (function () {
+                function AboutComponent() {
                 }
-                MembersComponent.prototype.ngOnInit = function () {
+                AboutComponent.prototype.ngOnInit = function () {
                 };
-                MembersComponent = __decorate([
+                AboutComponent = __decorate([
                     core_1.Component({
-                        selector: 'members',
-                        templateUrl: 'app/members/members.component.html',
-                        styleUrls: ['app/members/members.component.css']
+                        selector: 'about',
+                        templateUrl: 'app/about/about.component.html',
+                        directives: [courses_component_1.CoursesComponent],
+                        styleUrls: ['app/about/about.component.css']
                     }), 
                     __metadata('design:paramtypes', [])
-                ], MembersComponent);
-                return MembersComponent;
+                ], AboutComponent);
+                return AboutComponent;
             }());
-            exports_1("MembersComponent", MembersComponent);
+            exports_1("AboutComponent", AboutComponent);
         }
     }
 });

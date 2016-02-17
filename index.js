@@ -11,7 +11,7 @@ app.engine('html', require('ejs').renderFile);
 
 //ROUTING
 var routes = ['/', '/dashboard', '/events', '/calendar',
-    '/courses', '/members', '/gallery'];
+    '/courses', '/about', '/gallery', 'courses/detail/*'];
 app.get(routes, function (request, response) {
     response.render('index.html');
 });
