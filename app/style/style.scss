@@ -15,7 +15,6 @@
 .highlight {
   color: $brand-success;
 }
-
-a, button, .btn, *[click] {
-  cursor: hand;
+.click, a, button, .btn, *[click] {
+    cursor: pointer;
 }
