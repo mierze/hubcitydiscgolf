@@ -67,9 +67,9 @@ System.register(['angular2/core', 'angular2/common', "./date.service", '../event
                         if (this.events[e].repeat.length) {
                             if (this.events[e].repeat[0] == d.getDay().toString()) {
                                 if (this.events[e].repeat[1]) {
-                                    if (this.events[e].repeat[1] == 'a' && (d.getDate() % 2))
+                                    if (this.events[e].repeat[1] == 'a' && !(d.getDate() % 2))
                                         daysEvents.push(this.events[e]);
-                                    else if (this.events[e].repeat[1] == 'b' && !(d.getDate() % 2))
+                                    else if (this.events[e].repeat[1] == 'b' && (d.getDate() % 2))
                                         daysEvents.push(this.events[e]);
                                 }
                                 else
