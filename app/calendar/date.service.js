@@ -39,7 +39,7 @@ System.register(['angular2/core'], function(exports_1) {
                         case 11:
                             return 31;
                         case 1:
-                            return 28;
+                            return new Date().getFullYear() % 4 ? 29 : 28;
                         default:
                             return 30;
                     }

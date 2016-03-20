@@ -50,11 +50,12 @@ System.register(['angular2/core', 'angular2/common', "./date.service", '../event
                         var d = new Date(nextDate.getTime()); //shallow copy
                         if (i == 0) {
                             var j = 0;
-                            while (j++ < d.getDay())
+                            while (j++ < d.getDay()) {
                                 this.days.push({
-                                    "date": new Date(this.nextY, this.nextM, this._dateService.getNumDays(this.nextM - 1) + j - d.getDay()),
+                                    "date": new Date(this.nextY, (this.nextM - 1), this._dateService.getNumDays(this.nextM - 1) + j - d.getDay()),
                                     "events": null
                                 });
+                            }
                         }
                         //adding events
                         this.addEvents(d);
@@ -67,9 +68,9 @@ System.register(['angular2/core', 'angular2/common', "./date.service", '../event
                         if (this.events[e].repeat.length) {
                             if (this.events[e].repeat[0] == d.getDay().toString()) {
                                 if (this.events[e].repeat[1]) {
-                                    if (this.events[e].repeat[1] == 'a' && (d.getDate() % 2))
+                                    if (this.events[e].repeat[1] == 'a' && !(d.getDate() % 2))
                                         daysEvents.push(this.events[e]);
-                                    else if (this.events[e].repeat[1] == 'b' && !(d.getDate() % 2))
+                                    else if (this.events[e].repeat[1] == 'b' && d.getDate() % 2)
                                         daysEvents.push(this.events[e]);
                                 }
                                 else

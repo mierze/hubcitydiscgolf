@@ -26,7 +26,7 @@
         <h4>Saturday</h4>
     </div>
 </div>
-<div class="cell well" [ngClass]="{current: (day.date.getDate() == date.getDate() && day.date.getMonth() == date.getMonth()), 'click': (day.events != null && day.events.length)}"
+<div class="cell well" [ngClass]="{current: (day.date.getDate() == date.getDate() && day.date.getMonth() == date.getMonth() && day.date.getFullYear() == date.getFullYear()), 'click': (day.events != null && day.events.length)}"
    *ngFor="#day of days"
   (click)="cellModal(day)">
   <strong>{{day.date.getDate()}}</strong>

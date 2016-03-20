@@ -28,6 +28,8 @@ header h2 {
 }
 .current {
     background-color: #43ac6a;
+}
+.current h5 {
     color: #ffffff;
 }
 .cell {

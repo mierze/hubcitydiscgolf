@@ -1,5 +1,8 @@
 import { Event } from './event.service';
-/*TODO : location -> id*/
+/*TODO
+    -location -> id
+    -repeating end/start dates
+*/
 export var EVENTS:Event[] = [
     {
         "id": 0,
@@ -27,21 +30,21 @@ export var EVENTS:Event[] = [
         "about": "Every Sunday @ 2pm. Come throw for tags, or to just 'tag' along! Course rotates between Tyger River and Pipeline every other week. Free to play, optional $2 bogey pool.",
         "repeat": "0b"
     },
-    {
-        "id": 4,
-        "name": "Putting League",
-        "date": null,
-        "location": "Croft Baptist Church",
-        "about": "Every Friday night, rain or shine 7pm. Random draw two on two. $6 to play!",
-        "repeat": "5"
-    },
+    // {
+    //     "id": 4,
+    //     "name": "Putting League",
+    //     "date": null,
+    //     "location": "Croft Baptist Church",
+    //     "about": "Every Friday night, rain or shine 7pm. Random draw two on two. $6 to play!",
+    //     "repeat": '5'
+    // },
     {
         "id": 5,
-        "name": "Tyger River Open",
-        "date": new Date(2016, 3, 2),
+        "name": "Tyger River Doubles",
+        "date": null,
         "location": "Tyger River",
-        "about": "Tentitive date. Get your schedule cleared up for this one!",
-        "repeat": ""
+        "about": "Weekly random draw doubles 530PM.",
+        "repeat": "4"
     },
     {
         "id": 6,
