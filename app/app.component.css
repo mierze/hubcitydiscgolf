@@ -1,0 +1,55 @@
+@media screen and (max-height: 600px) {
+  .app {
+    padding-top: 5% !important;
+    background-position: 0px 40%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .app {
+    background-size: cover !important;
+  }
+  .title {
+    font-size: 2em !important;
+  }
+}
+.title {
+  color: #fff;
+  font-size: 4em;
+  text-shadow: 0px 0px 4px #fff;
+}
+
+.app {
+  background-image: url('app/style/images/bg.jpg') !important;
+  padding: 20% 10%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transition: background 0.8s ease, padding 0.8s linear;
+}
+.blip {
+  display: block;
+  text-indent: -9999px;
+  z-index: 19999;
+  width: 80px;
+  height: 80px background-size: 80px 80px;
+  background-repeat: no-repeat;
+}
+.instagram {
+  background: url('app/style/images/instagram2.svg');
+}
+.youtube {
+  background: url('app/style/images/youtube.svg');
+}
+.facebook {
+  background: url('app/style/images/facebook.svg');
+}
+
+.email {
+  display: block;
+  background: transparent;
+  background-image: url('app/style/images/email.png');
+}

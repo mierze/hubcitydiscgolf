@@ -1,14 +1,14 @@
 0 info it worked if it ends with ok
-1 verbose cli [ 'node', '/usr/local/bin/npm', 'run', 'tsc' ]
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'run', 'node' ]
 2 info using npm@2.11.2
 3 info using node@v0.12.5
-4 verbose run-script [ 'pretsc', 'tsc', 'posttsc' ]
-5 info pretsc hubcity-discgolf@0.1.0
-6 info tsc hubcity-discgolf@0.1.0
+4 verbose run-script [ 'prenode', 'node', 'postnode' ]
+5 info prenode hubcity-discgolf@0.1.0
+6 info node hubcity-discgolf@0.1.0
 7 verbose unsafe-perm in lifecycle true
-8 info hubcity-discgolf@0.1.0 Failed to exec tsc script
-9 verbose stack Error: hubcity-discgolf@0.1.0 tsc: `tsc`
-9 verbose stack Exit status 2
+8 info hubcity-discgolf@0.1.0 Failed to exec node script
+9 verbose stack Error: hubcity-discgolf@0.1.0 node: `node index.js`
+9 verbose stack Exit status 1
 9 verbose stack     at EventEmitter.<anonymous> (/usr/local/lib/node_modules/npm/lib/utils/lifecycle.js:213:16)
 9 verbose stack     at EventEmitter.emit (events.js:110:17)
 9 verbose stack     at ChildProcess.<anonymous> (/usr/local/lib/node_modules/npm/lib/utils/spawn.js:24:14)
@@ -16,19 +16,19 @@
 9 verbose stack     at maybeClose (child_process.js:1015:16)
 9 verbose stack     at Process.ChildProcess._handle.onexit (child_process.js:1087:5)
 10 verbose pkgid hubcity-discgolf@0.1.0
-11 verbose cwd /Users/brett/Documents/Workspaces/hubcitydiscgolf/app/gallery
-12 error Darwin 15.0.0
-13 error argv "node" "/usr/local/bin/npm" "run" "tsc"
+11 verbose cwd /Users/brett/Documents/Workspaces/hcdg-workspace
+12 error Darwin 15.3.0
+13 error argv "node" "/usr/local/bin/npm" "run" "node"
 14 error node v0.12.5
 15 error npm  v2.11.2
 16 error code ELIFECYCLE
-17 error hubcity-discgolf@0.1.0 tsc: `tsc`
-17 error Exit status 2
-18 error Failed at the hubcity-discgolf@0.1.0 tsc script 'tsc'.
+17 error hubcity-discgolf@0.1.0 node: `node index.js`
+17 error Exit status 1
+18 error Failed at the hubcity-discgolf@0.1.0 node script 'node index.js'.
 18 error This is most likely a problem with the hubcity-discgolf package,
 18 error not with npm itself.
 18 error Tell the author that this fails on your system:
-18 error     tsc
+18 error     node index.js
 18 error You can get their info via:
 18 error     npm owner ls hubcity-discgolf
 18 error There is likely additional logging output above.
