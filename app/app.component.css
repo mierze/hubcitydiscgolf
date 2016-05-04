@@ -8,8 +8,14 @@
   .app {
     background-size: cover !important;
   }
-  .title {
+  h1.title {
     font-size: 2em !important;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .title {
+    font-size: 3em !important;
   }
 }
 .title {
@@ -28,7 +34,7 @@
   bottom: 0;
   left: 0;
   right: 0;
-  transition: background 0.8s ease, padding 0.8s linear;
+  transition: background 0.8s ease, padding 0.8s linear, font-size 1s ease;
 }
 .blip {
   display: block;
