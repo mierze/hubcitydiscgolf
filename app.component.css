@@ -19,7 +19,7 @@
   }
 }
 @media screen and (max-height: 300px) {
-  md-content.app {
+  .app {
     background-position: 0px 50%;
     padding-top: 0% !important;
   }
@@ -46,6 +46,7 @@
 .app {
   background-image: url('app/style/images/bg.png') !important;
   padding: 20% 10%;
+  background-position: 70% -50%;
   background-size: cover;
   background-repeat: no-repeat;
   position: fixed;
