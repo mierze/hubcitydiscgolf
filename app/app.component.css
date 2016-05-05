@@ -1,18 +1,37 @@
 @media screen and (max-height: 600px) {
   .app {
     padding-top: 5% !important;
-    background-position: 0px 40%;
+    background-position: 0px 30% !important;
   }
 }
 @media screen and (max-width: 600px) {
+  .blip {
+
+    width: 50px !important;
+    height: 50px !important;
+    background-size: 50px 50px !important;
+  }
   .app {
     background-size: cover !important;
   }
   h1.title {
-    font-size: 2em !important;
+    font-size: 2.2em !important;
   }
 }
-
+@media screen and (max-height: 300px) {
+  md-content.app {
+    background-position: 0px 50%;
+    padding-top: 0% !important;
+  }
+  .title {
+    margin-bottom: 5px;
+  }
+  .blip {
+        width: 40px !important;
+        height: 40px !important;
+        background-size: 40px 40px !important;
+  }
+}
 @media screen and (max-width: 850px) {
   .title {
     font-size: 3em !important;
@@ -21,11 +40,11 @@
 .title {
   color: #fff;
   font-size: 4em;
-  text-shadow: 0px 0px 4px #fff;
+  transition: margin 0.8s linear, font-size 0.4s linear;
 }
 
 .app {
-  background-image: url('app/style/images/bg.jpg') !important;
+  background-image: url('app/style/images/bg.png') !important;
   padding: 20% 10%;
   background-size: cover;
   background-repeat: no-repeat;
@@ -34,15 +53,13 @@
   bottom: 0;
   left: 0;
   right: 0;
-  transition: background 0.8s ease, padding 0.8s linear, font-size 1s ease;
+  transition: background 0.8s ease, padding 0.8s linear, font-size 0.7s linear;
 }
 .blip {
-  display: block;
-  text-indent: -9999px;
-  z-index: 19999;
-  width: 80px;
-  height: 80px background-size: 80px 80px;
-  background-repeat: no-repeat;
+  transition: background-size 0.8s ease, height 0.8s ease, width 0.8s ease;
+  width: 60px;
+  height: 60px;
+  background-size: 60px 60px;
 }
 .instagram {
   background: url('app/style/images/instagram2.svg');
