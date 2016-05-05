@@ -6,7 +6,7 @@
 }
 @media screen and (max-width: 600px) {
   .blip {
-
+    margin: 5px !important;
     width: 50px !important;
     height: 50px !important;
     background-size: 50px 50px !important;
@@ -56,6 +56,8 @@
   transition: background 0.8s ease, padding 0.8s linear, font-size 0.7s linear;
 }
 .blip {
+  margin: 10px;
+  border-radius: 50%;
   transition: background-size 0.8s ease, height 0.8s ease, width 0.8s ease;
   width: 60px;
   height: 60px;
