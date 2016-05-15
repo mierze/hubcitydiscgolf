@@ -64,6 +64,13 @@
   height: 60px;
   background-size: 60px 60px;
 }
+.parks.blip {
+    border-radius: 0% !important;
+
+    background-size: contain;
+    padding: 0;
+
+}
 .instagram {
   background: url('app/style/images/instagram2.svg');
 }
@@ -73,7 +80,9 @@
 .facebook {
   background: url('app/style/images/facebook.svg');
 }
-
+.parks {
+  background: url('app/style/images/parks.png');
+}
 .email {
   display: block;
   background: transparent;
