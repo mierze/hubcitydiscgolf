@@ -10,15 +10,10 @@ app.engine('html', require('ejs').renderFile);
 
 
 //ROUTING
-var routes = ['/', '/dashboard', '/events', '/calendar',
-    '/courses', '/about', '/gallery', 'courses/detail/*'];
-app.get(routes, function (request, response) {
+app.get('/*', function(request, response) {
     response.render('index.html');
 });
 
-
-//require('cors');
-//app.use(cors());
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
     var err = new Error('Request Not Found');
@@ -34,6 +29,6 @@ app.use(function(err, req, res, next) {
 
 
 //START SERVER
-app.listen(app.get('port'), function () {
+app.listen(app.get('port'), function() {
     console.log('Node app is running on port', app.get('port'));
 });
